@@ -20,9 +20,20 @@ namespace kapitel_3
             //Console.WriteLine("Zeichenkette: " + s + "Zeichen: " + c);
             //Console.ReadKey();
 
-            Console.WriteLine("Integer: {0}  double: {1} \a", i, d);
-            Console.WriteLine("Zeichenkette: {0} Zeichen: {1} \a", s, c);
+            //Console.WriteLine("Integer: {0}  double: {1} \a", i, d);
+            //Console.WriteLine("Zeichenkette: {0} Zeichen: {1} \a", s, c);
+            //Console.ReadKey();
+            if (i is int)
+            {
+                Console.WriteLine("i ist ein Int, Yeah");
+            }
+
+            if (s is string)
+            {
+                Console.WriteLine("s ist ein String, Yuhuuuuu");
+            }
             Console.ReadKey();
+
         }
     }
 }
