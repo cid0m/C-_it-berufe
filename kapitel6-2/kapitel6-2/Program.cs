@@ -78,7 +78,21 @@ namespace kapitel6_2
             //Console.WriteLine(einName);
             //Console.ReadKey();
 
+            CTest einTest = new CTest();
+            CVerweis einVerweis = new CVerweis();
 
+            einVerweis.SetValue(0);
+            einTest.Werteuebergabe(einVerweis);
+            Console.WriteLine(einVerweis.GetValue());
+
+            einVerweis.SetValue(0);
+            einTest.Referenzuebergabe(ref einVerweis);
+            Console.WriteLine(einVerweis.GetValue());
+
+            einVerweis.SetValue(0);
+            einTest.Referenceubergabe_2(out einVerweis);
+            Console.WriteLine(einVerweis.GetValue());
+            Console.ReadKey();
         }
     }
 }
